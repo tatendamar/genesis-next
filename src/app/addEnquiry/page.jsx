@@ -8,11 +8,7 @@ export const metadata = {
 
 
 const AddPage = () => {
-  return (
-    <div>
-      <ModalComp />
-    </div>
-  )
+  return <div>{/* <ModalComp /> */}</div>
 }
 
 export default AddPage

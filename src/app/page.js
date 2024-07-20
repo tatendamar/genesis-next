@@ -1,10 +1,9 @@
 import Latest from '@/components/Latest'
 import React from 'react'
-import { metadata } from './layout'
+
 import RentComponent from '@/components/RentComponent'
 import SaleComponent from '@/components/SaleComponent'
-import { Metadata } from 'next'
-
+import error from './error'
 
 const Home = async ({ searchParams }) => {
   const search = searchParams.search || 'latest' || 'for-sale' || 'to-rent'
@@ -20,14 +19,17 @@ const Home = async ({ searchParams }) => {
         : null
     }`
   )
-  const data = await latest.json()
+    .then((data) => {
+      if (!data.ok) {
+        throw new Error(`Failed to fetch latest properties: ${data.status}`)
+      }
+      return data.json()
+    })
+    .catch((error) => console.error(error))
 
-  if (!latest.ok) {
-    throw new Error(`Failed to fetch latest properties: ${latest.status}`)
-  }
+  console.log(latest)
+  const results = latest.data
 
-  const results = data.data
-  console.log(results)
   return (
     <div>
       {search === 'latest' ? (
