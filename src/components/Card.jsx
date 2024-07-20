@@ -10,8 +10,6 @@ const Card = ({ result }) => {
   return (
     <div className="group cursor-pointer sm:hover:shadow-slate-400 sm:shadow-md rounded-lg sm:border sm:border-slate-400 sm:m-2 transition-shadow duration-200">
       <Link href={`/details/${result.id}`}>
-        {/* {result.images &&
-        result.images.map((image) => <ImageComponent image={image} />)} */}
         <img src={result.images[0].filePath} />
         <div className="">
           <p className="line-clamp-2 text-md">{result.title}</p>

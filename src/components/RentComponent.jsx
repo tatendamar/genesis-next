@@ -15,7 +15,7 @@ const RentComponent = ({ results }) => {
   }
   return (
     <>
-      <div className="sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 w-3/4 m-auto w-3/4 m-auto">
+      <div className="sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 w-3/4 m-auto">
         <div className="mt-20">
           <Slider {...settings}>
             {results.map((result) => {

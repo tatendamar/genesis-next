@@ -1,7 +1,10 @@
 import Latest from '@/components/Latest'
 import React from 'react'
+import { metadata } from './layout'
 import RentComponent from '@/components/RentComponent'
 import SaleComponent from '@/components/SaleComponent'
+import { Metadata } from 'next'
+
 
 const Home = async ({ searchParams }) => {
   const search = searchParams.search || 'latest' || 'for-sale' || 'to-rent'

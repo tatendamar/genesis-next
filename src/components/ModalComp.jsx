@@ -50,20 +50,21 @@ export function ModalComp() {
 
   return (
     <>
-      <Button onClick={() => setOpenModal(true)}>Add</Button>
+      <Button onClick={() => setOpenModal(true)}>Submit Enquiry</Button>
       <form>
         <Modal show={openModal} size="md" onClose={onCloseModal} popup>
           <Modal.Header />
           <Modal.Body>
             <div className="space-y-6">
               <h3 className="text-xl font-medium text-gray-900 dark:text-white">
-                Sign in to our platform
+                Submit Enquiry
               </h3>
               <div>
                 <div className="mb-2 block">
                   <Label htmlFor="firstName" value="Your firstName" />
                 </div>
                 <input
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                   type="text"
                   id="firstName"
                   placeholder="firstName"
@@ -77,6 +78,7 @@ export function ModalComp() {
                   <Label htmlFor="lastName" value="Your lastName" />
                 </div>
                 <input
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                   type="text"
                   id="lastName"
                   placeholder="lastName"
@@ -90,6 +92,7 @@ export function ModalComp() {
                   <Label htmlFor="email" value="Your email" />
                 </div>
                 <input
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                   type="text"
                   id="email"
                   placeholder="name@company.com"
@@ -104,6 +107,7 @@ export function ModalComp() {
                   <Label htmlFor="dialingCode" value="Your dialingCode" />
                 </div>
                 <input
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                   type="text"
                   id="dialingCode"
                   placeholder="dialingCode"
@@ -118,6 +122,7 @@ export function ModalComp() {
                   <Label htmlFor="phoneNumber" value="Your phoneNumber" />
                 </div>
                 <input
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                   type="text"
                   id="phoneNumber"
                   placeholder="phoneNumber"
@@ -132,6 +137,7 @@ export function ModalComp() {
                   <Label htmlFor="message" value="Your message" />
                 </div>
                 <input
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                   type="text"
                   id="message"
                   placeholder="message"
@@ -146,6 +152,7 @@ export function ModalComp() {
                   <Label htmlFor="ownedBy" value="Your ownedBy" />
                 </div>
                 <input
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                   type="text"
                   id="ownedBy"
                   placeholder="ownedBy"

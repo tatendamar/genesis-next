@@ -16,8 +16,8 @@ const Latest = ({ results }) => {
 
   return (
     <>
-      <div className="sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 w-3/4 m-auto w-3/4 m-auto">
-        <div className="mt-20">
+      <div className="sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 w-3/4 m-auto">
+        <div className="mt-20 gap-6">
           <Slider {...settings}>
             {results.map((result) => {
               return <Card key={result.id} result={result} />
