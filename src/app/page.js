@@ -27,7 +27,7 @@ const Home = async ({ searchParams }) => {
     })
     .catch((error) => console.error(error))
 
-  console.log(latest)
+
   const results = latest.data
 
   return (

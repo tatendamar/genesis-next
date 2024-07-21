@@ -1,5 +1,4 @@
 import React from 'react'
-import ImageComponent from './ImageComponent'
 import { AiOutlineWhatsApp } from 'react-icons/ai'
 import { FiPhoneCall } from 'react-icons/fi'
 import { AiTwotoneMail } from 'react-icons/ai'

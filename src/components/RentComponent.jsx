@@ -14,17 +14,15 @@ const RentComponent = ({ results }) => {
     slidesToScroll: 1,
   }
   return (
-    <>
-      <div className="sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 w-3/4 m-auto">
-        <div className="mt-20">
-          <Slider {...settings}>
-            {results.map((result) => {
-              return <Card key={result.id} result={result} />
-            })}
-          </Slider>
-        </div>
+    <div className="sm:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 w-3/4 m-auto">
+      <div className="mt-20">
+        <Slider {...settings}>
+          {results.map((result) => {
+            return <Card key={result.id} result={result} />
+          })}
+        </Slider>
       </div>
-    </>
+    </div>
   )
 }
 
